@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<University>
+    <info>
+        <title>Руководство ОмГТУ</title>
+        <fullName>Омский государственный технический университет</fullName>
+        <website>https://omgtu.ru</website>
+    </info>
+    
+    <Rectorate>
+        <info>   
+            <title>Ректорат</title>
+        </info>
+        
+        <rector>
+            <firstname>Павел</firstname>
+            <patronymic>Александрович</patronymic> 
+            <surname>Корчагин</surname> 
+            <academicDegree>д.т.н</academicDegree>  
+            <academicTitle>ректор</academicTitle> 
+            <position>Ректор</position> 
+            <image src="https://omgtu.ru/general_information/guide_omgtu/%D0%9A%D0%BE%D1%80%D1%87%D0%B0%D0%B3%D0%B8%D0%BD.jpg"/> 
+        </rector>
+        
+        <pro-rectors> 
+            <pro-rector id="1">   
+                <firstname>Наталья</firstname>   
+                <patronymic>Анатольевна</patronymic>   
+                <surname>Прокудина</surname> 
+                <academicTitle>доцент</academicTitle> 
+                <academicDegree>к.т.н</academicDegree>   
+                <position>Проректор по образовательной деятельности</position> 
+                <image src="https://omgtu.ru/general_information/guide_omgtu/rectorate-photo/%D0%9F%D1%80%D0%BE%D0%BA%D1%83%D0%B4%D0%B8%D0%BD%D0%B0.jpg"/>   
+            </pro-rector> 
+            
+            <pro-rector id="2">   
+                <firstname>Павел</firstname>   
+                <patronymic>Сергеевич</patronymic>   
+                <surname>Ложников</surname>   
+                <academicTitle>доцент</academicTitle> 
+                <academicDegree>д.т.н</academicDegree> 
+                <position>Проректор по научной и инновационной деятельности</position>   
+                <image src="https://omgtu.ru/general_information/guide_omgtu/rectorate-photo/%D0%9B%D0%BE%D0%B6%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2.jpg"/>   
+            </pro-rector> 
+            
+            <pro-rector id="3">   
+                <firstname>Олег</firstname>   
+                <patronymic>Александрович</patronymic>   
+                <surname>Перегудов</surname> 
+                <academicTitle>доцент</academicTitle>
+                <academicDegree>к.т.н</academicDegree> 
+                <position>Проректор по молодежной политике и воспитательной деятельности</position>
+                <image src="https://omgtu.ru/general_information/guide_omgtu/rectorate-photo/%D0%9F%D0%B5%D1%80%D0%B5%D0%B3%D1%83%D0%B4%D0%BE%D0%B2.jpg"/>   
+            </pro-rector> 
+            
+            <pro-rector id="4">   
+                <firstname>Александр</firstname>   
+                <patronymic>Сергеевич</patronymic>   
+                <surname>Грицай</surname>   
+                <academicTitle>доцент</academicTitle> 
+                <academicDegree>к.т.н</academicDegree> 
+                <position>Проректор по цифровой трансформации</position>   
+                <image src="https://omgtu.ru/general_information/guide_omgtu/rectorate-photo/%D0%93%D1%80%D0%B8%D1%86%D0%B0%D0%B9.jpg"/>   
+            </pro-rector> 
+        </pro-rectors> 
+    </Rectorate> 
+</University>
