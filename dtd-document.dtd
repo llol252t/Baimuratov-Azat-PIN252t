@@ -1,0 +1,26 @@
+<!-- University.dtd -->
+
+<!ELEMENT University (info, Rectorate)>
+
+<!ELEMENT info (title, fullName, website)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT fullName (#PCDATA)>
+<!ELEMENT website (#PCDATA)>
+
+<!ELEMENT Rectorate (info, rector, pro-rectors)>
+
+<!ELEMENT rector (firstname, patronymic, surname, academicTitle?, academicDegree, position, image)>
+<!ELEMENT pro-rectors (pro-rector+)>
+
+<!ELEMENT pro-rector (firstname, patronymic, surname, academicTitle?, academicDegree?, position, image)>
+<!ELEMENT firstname (#PCDATA)>
+<!ELEMENT patronymic (#PCDATA)>
+<!ELEMENT surname (#PCDATA)>
+<!ELEMENT academicTitle (#PCDATA)>
+<!ELEMENT academicDegree (#PCDATA)>
+<!ELEMENT position (#PCDATA)>
+<!ELEMENT image EMPTY>
+
+<!-- Атрибуты -->
+<!ATTLIST pro-rector id ID #REQUIRED>
+<!ATTLIST image src CDATA #REQUIRED>
