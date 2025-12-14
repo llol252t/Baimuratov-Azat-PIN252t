@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<University>
+<!DOCTYPE University SYSTEM "university.dtd">
+<University xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation="university.xsd">
     <info>
         <title>Руководство ОмГТУ</title>
         <fullName>Омский государственный технический университет</fullName>
@@ -9,14 +11,16 @@
     <Rectorate>
         <info>   
             <title>Ректорат</title>
+            <fullName></fullName>
+            <website></website>
         </info>
         
         <rector>
             <firstname>Павел</firstname>
             <patronymic>Александрович</patronymic> 
             <surname>Корчагин</surname> 
+            <academicTitle>ректор</academicTitle>
             <academicDegree>д.т.н</academicDegree>  
-            <academicTitle>ректор</academicTitle> 
             <position>Ректор</position> 
             <image src="https://omgtu.ru/general_information/guide_omgtu/%D0%9A%D0%BE%D1%80%D1%87%D0%B0%D0%B3%D0%B8%D0%BD.jpg"/> 
         </rector>
