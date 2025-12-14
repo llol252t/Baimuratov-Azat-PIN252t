@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE University SYSTEM "university.dtd">
+<!DOCTYPE University SYSTEM "dtd-document.dtd">
 <University xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-           xsi:noNamespaceSchemaLocation="university.xsd">
+           xsi:noNamespaceSchemaLocation="xsd-document.xsd">
     <info>
         <title>Руководство ОмГТУ</title>
         <fullName>Омский государственный технический университет</fullName>
