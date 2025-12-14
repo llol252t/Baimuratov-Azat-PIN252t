@@ -9,7 +9,7 @@
 
 <!ELEMENT Rectorate (info, rector, pro-rectors)>
 
-<!ELEMENT rector (firstname, patronymic, surname, academicTitle?, academicDegree, position, image)>
+<!ELEMENT rector (firstname, patronymic, surname, academicTitle?, academicDegree?, position, image)>
 <!ELEMENT pro-rectors (pro-rector+)>
 
 <!ELEMENT pro-rector (firstname, patronymic, surname, academicTitle?, academicDegree?, position, image)>
