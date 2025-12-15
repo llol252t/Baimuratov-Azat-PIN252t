@@ -50,14 +50,15 @@
                     <div class="university-name">
                         <xsl:value-of select="info/fullName"/>
                     </div>
-                    <div>
-                        <xsl:value-of select="info/website"/>
-                    </div>
+                    <xsl:if test="info/website">
+                        <div>
+                            <xsl:value-of select="info/website"/>
+                        </div>
+                    </xsl:if>
                 </div>
                 
-                <h2>Ректорат</h2>
-                
-                
+                <h2><xsl:value-of select="Rectorate/info/title"/></h2>
+
                 <h3>Ректор</h3>
                 <table>
                     <tr>
@@ -89,8 +90,7 @@
                     </tr>
                     </xsl:for-each>
                 </table>
-                
-                
+
                 <h3>Проректоры</h3>
                 <table>
                     <tr>
