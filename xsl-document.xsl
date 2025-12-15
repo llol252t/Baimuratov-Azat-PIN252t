@@ -4,7 +4,6 @@
     
     <xsl:output method="html" encoding="UTF-8"/>
     
-    <!-- Основной шаблон -->
     <xsl:template match="University">
         <html>
             <head>
@@ -58,7 +57,7 @@
                 
                 <h2>Ректорат</h2>
                 
-                <!-- Ректор -->
+                
                 <h3>Ректор</h3>
                 <table>
                     <tr>
@@ -91,7 +90,7 @@
                     </xsl:for-each>
                 </table>
                 
-                <!-- Проректоры -->
+                
                 <h3>Проректоры</h3>
                 <table>
                     <tr>
