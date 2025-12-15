@@ -40,6 +40,10 @@
                         font-weight: bold;
                         color: #2c3e50;
                     }
+                    .photo {
+                        border: 1px solid #ccc;
+                        border-radius: 3px;
+                    }
                 </style>
             </head>
             <body>
@@ -62,6 +66,7 @@
                         <th>Должность</th>
                         <th>Ученое звание</th>
                         <th>Ученая степень</th>
+                        <th>Фотография</th>
                     </tr>
                     <xsl:for-each select="Rectorate/rector">
                     <tr>
@@ -79,6 +84,9 @@
                         <td align="center">
                             <xsl:value-of select="academicDegree"/>
                         </td>
+                        <td align="center">
+                            <img src="{image/@src}" class="photo" width="100" height="120" alt="Фото"/>
+                        </td>
                     </tr>
                     </xsl:for-each>
                 </table>
@@ -92,6 +100,7 @@
                         <th>Должность</th>
                         <th>Ученое звание</th>
                         <th>Ученая степень</th>
+                        <th>Фотография</th>
                     </tr>
                     <xsl:for-each select="Rectorate/pro-rectors/pro-rector">
                     <tr>
@@ -112,47 +121,8 @@
                         <td align="center">
                             <xsl:value-of select="academicDegree"/>
                         </td>
-                    </tr>
-                    </xsl:for-each>
-                </table>
-                
-                <!-- Таблица с изображениями -->
-                <h3>Фотографии руководства</h3>
-                <table>
-                    <tr>
-                        <th>ФИО</th>
-                        <th>Должность</th>
-                        <th>Фотография</th>
-                    </tr>
-                    <!-- Ректор -->
-                    <xsl:for-each select="Rectorate/rector">
-                    <tr>
                         <td align="center">
-                            <xsl:value-of select="surname"/><xsl:text> </xsl:text>
-                            <xsl:value-of select="firstname"/><xsl:text> </xsl:text>
-                            <xsl:value-of select="patronymic"/>
-                        </td>
-                        <td align="center">
-                            <xsl:value-of select="position"/>
-                        </td>
-                        <td align="center">
-                            <img src="{image/@src}" width="100" height="120" alt="Фото"/>
-                        </td>
-                    </tr>
-                    </xsl:for-each>
-                    <!-- Проректоры -->
-                    <xsl:for-each select="Rectorate/pro-rectors/pro-rector">
-                    <tr>
-                        <td align="center">
-                            <xsl:value-of select="surname"/><xsl:text> </xsl:text>
-                            <xsl:value-of select="firstname"/><xsl:text> </xsl:text>
-                            <xsl:value-of select="patronymic"/>
-                        </td>
-                        <td align="center">
-                            <xsl:value-of select="position"/>
-                        </td>
-                        <td align="center">
-                            <img src="{image/@src}" width="100" height="120" alt="Фото"/>
+                            <img src="{image/@src}" class="photo" width="100" height="120" alt="Фото"/>
                         </td>
                     </tr>
                     </xsl:for-each>
