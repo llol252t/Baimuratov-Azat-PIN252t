@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="University">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="info" type="infoType"/>
+                <xs:element name="Rectorate" type="rectorateType"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="infoType">
+        <xs:sequence>
+            <xs:element name="title" type="xs:string"/>
+            <xs:element name="fullName" type="xs:string"/>
+            <xs:element name="website" type="xs:anyURI"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="rectorateType">
+        <xs:sequence>
+            <xs:element name="info" type="infoType"/>
+            <xs:element name="rector" type="personType"/>
+            <xs:element name="pro-rectors">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="pro-rector" type="personType" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="personType">
+        <xs:sequence>
+            <xs:element name="firstname" type="xs:string"/>
+            <xs:element name="patronymic" type="xs:string"/>
+            <xs:element name="surname" type="xs:string"/>
+            <xs:element name="academicTitle" type="xs:string" minOccurs="0"/>
+            <xs:element name="academicDegree" type="xs:string" minOccurs="0"/>
+            <xs:element name="position" type="xs:string"/>
+            <xs:element name="image">
+                <xs:complexType>
+                    <xs:attribute name="src" type="xs:anyURI" use="required"/>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:ID" use="optional"/>
+    </xs:complexType>
+
+</xs:schema>
